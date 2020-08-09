@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>CSS File</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="harshLogo.png" alt="">
+            <div>Harsh Creations</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Harsh</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button id="callbtn" class="callbtn">Call Us Now</button>
+            <br>
+            <button id="emailbtn" class="emailbtn">E-mail Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <div id="clock" onload="setinterval"></div>
+        <button id="clickmebtn">Click me</button><br>
+        <label for="alarm" id="alarmlabel">Enter time for alarm</label>
+        <input id="alarm" class="alarm" name="alarm" placeholder="YYYY-MM-DD HH:MM:SS">
+        <button id="setalarm" name="setalarm">Set Alarm</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

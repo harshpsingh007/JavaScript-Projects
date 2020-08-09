@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>MY LIBRARY</title>
+</head>
+
+<body>
+  <div id="message"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  <div class="container mt-3" style="width: 700px;">
+    <hr>
+    <h1>Welcome To My Library  :</h1>
+    <hr>
+    <form id="libraryForm">
+      <div class="form-group" >
+        <label for="bookName"><strong>Enter Your Bookname :-</strong></label>
+        <input type="text" class="form-control border-dark" id="bookName" aria-describedby="emailHelp" placeholder="Enter Your Bookname">
+      </div>
+      <div class="form-group">
+        <label for="authorName"><strong>Author Name :-</strong> </label>
+        <input type="text" class="form-control border-dark" id="authorName" placeholder="Enter Author's Name">
+      </div>
+      <label for="form-check"><strong> Genre of the book :-</strong></label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="typeOfBook" id="thrilling" value="Thrilling" checked>
+        <label class="form-check-label" for="thrilling">
+          <strong>Thrilling</strong>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="typeOfBook" id="cooking" value="Cooking">
+        <label class="form-check-label" for="cooking">
+          <strong>Cooking</strong>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="typeOfBook" id="programming" value="Programming">
+        <label class="form-check-label" for="programming">
+          <strong>Programming</strong>
+        </label>
+      </div>
+      <button type="submit" style="border-radius: 30%;margin-left: 40%;" class="btn-lg btn-dark mt-2">Submit</button>
+    </form>
+    <hr class="border-dark" >
+
+    <table class="table mt-4">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Book Name</th>
+          <th scope="col">Author Name</th>
+          <th scope="col">Genre</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="table">
+      </tbody>
+    </table>
+    <p>To Delete just click one time on Delete button and refresh.</p>
+  </div>
+
+  <!-- custom JavaScript -->
+  <script src="app.js"></script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <title>Animations</title>
+    <style>
+        .navigation {
+            /* border: 2px solid black; */
+            display: flex;
+            width: 750px;
+            margin: auto;
+        }
+
+        header::before {
+            background: url('https://images.unsplash.com/photo-1587711007486-716cf3eee58c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExNTQ4fQ&auto=format&fit=crop&w=1351&q=80') no-repeat center center/cover;
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .navlist {
+            flex-direction: column-reverse;
+            color: black;
+            list-style: none;
+            margin: auto;
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            text-shadow: 2px 2px chocolate;
+            cursor: pointer;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+        }
+
+        .container {
+            border: 5px solid red;
+            display: flex;
+            border-radius: 80px;
+            height: 400px;
+            margin: 10px;
+        }
+
+        .animation {
+            border: 2px solid burlywood;
+            background-color: chocolate;
+            animation: harsh;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: initial;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            font-size: 100px;
+            font-family: 'Fredericka the Great', cursive;
+        }
+
+        @keyframes harsh {
+            to {
+                border-radius: 550px;
+                width: 400px;
+            }
+
+            from {
+                border-radius: 400px;
+                width: 1000px;
+            }
+        }
+
+        .animation2 {
+            border: 2px solid burlywood;
+            background-color: chocolate;
+            width: 200px;
+            height: 200px;
+            top: 0px;
+            left: 0px;
+            animation: harsh2;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: initial;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            font-size: 50px;
+            font-family: 'Fredericka the Great', cursive;
+        }
+
+        @keyframes harsh2 {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+
+            25% {
+                width: 0px;
+                height: 200px;
+            }
+
+            75% {
+                width: 200px;
+                height: 200px;
+            }
+
+            100% {
+                width: 200px;
+                height: 0px;
+            }
+        }
+
+        .animation3 {
+            position: relative;
+            border: 2px solid burlywood;
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 450px;
+            animation: harsh3;
+            animation-duration: 8s;
+            animation-timing-function: ease-in-out;
+            animation-delay: initial;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            font-size: 30px;
+        }
+
+        @keyframes harsh3 {
+            0% {
+                top: 100px;
+                left: 450px;
+            }
+
+            25% {
+                top: 200px;
+                left: 450px;
+            }
+
+            50% {
+                top: 200px;
+                left: 550px;
+            }
+
+            75% {
+                top: 100px;
+                left: 550px;
+            }
+
+            100% {
+                top: 100px;
+                left: 450px;
+            }
+        }
+
+        img {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 60px;
+            /* border: 2px solid yellow; */
+            top: 0px;
+            left: 0px;
+            animation: infinity;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes infinity {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            12.5% {
+                top: -80px;
+                left: -80px;
+            }
+
+            25% {
+                top: 0px;
+                left: -160px;
+            }
+
+            37.5% {
+                top: 80px;
+                left: -80px;
+            }
+
+            50% {
+                top: 0px;
+                left: 0px;
+            }
+
+            62.5% {
+                top: -80px;
+                left: 80px;
+            }
+
+            75% {
+                top: 0px;
+                left: 160px;
+            }
+
+            87.5% {
+                top: 80px;
+                left: 80px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        .animation4 {
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navigation">
+                <li class="navlist" id="navcontent1"><a href="#"> Home</a></li>
+                <li class="navlist" id="navcontent2"><a href="#"> About</a></li>
+                <li class="navlist" id="navcontent3"><a href="#"> Contact Us</a></li>
+                <li class="navlist" id="navcontent4"><a href="#"> Harsh</a></li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <h1>Animations</h1>
+    <div class="container">
+        <div class="animation">HARSH</div>
+    </div>
+    <div class="container">
+        <div class="animation2"></div>
+    </div>
+    <div class="container">
+        <div class="animation3">HARSH</div>
+    </div>
+    <div class="container">
+        <div class="animation4"><img src="harshLogo.png" alt=""> </div>
+    </div>
+</body>
+
+</html>

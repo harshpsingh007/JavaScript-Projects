@@ -1,0 +1,108 @@
+body{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bangers', cursive;
+    background-image: url("index.jpg");
+    margin: 0px;
+    padding: 0px;
+}
+
+/* left div */
+.left{
+    display: inline-block;
+    /* border: 2px solid rgb(248, 169, 169); */
+    margin: 15px;
+    width: auto;
+}
+/* mid div */
+.mid{
+    display: block;
+    position: absolute;
+    /* border: 2px solid rgb(157, 240, 157); */
+    width: 100%;
+    top: 25px;
+    left: auto;
+    margin: auto;
+}
+/* right div */
+.right{
+    position: absolute;
+    display: inline-block;
+    top : 36px;
+    right: 10px;
+    text-align: right;
+    /* border: 5px solid blue; */
+}
+
+/* logo image */
+.left img{
+    border-radius: 25px;
+    width: 100px;
+}
+/* logo text */
+.left div{
+    text-align: center;
+}
+
+.navbar{
+    text-align: center;
+}
+.navbar li a {
+    color: rgb(69, 250, 175);
+    text-decoration: none;
+    font-size: 50px;
+    margin-left: 45px;
+}
+.navbar li a:hover,.navbar li a.active{
+    color: yellow;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style: none;
+}
+
+button{
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    margin: 2px;
+    border: 5px solid black;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Body */
+.container{
+    width: 600px;
+    margin: 100px auto;
+    /* border: 2px solid yellowgreen; */
+    text-align: center;
+}
+#clickmebtn{
+    border: none;
+    font-size: 40px;
+    margin: auto;
+}
+#alarmlabel{
+    font-size: 30px;
+    padding: 10px;
+}
+#alarm{
+    font-size: 40px;
+}
+#setalarm{
+    margin-top: 5px;
+}
+
+
+/* Clock  */
+#clock{
+    font-size: 42px;
+}

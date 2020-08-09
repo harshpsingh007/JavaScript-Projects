@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Form Validation</title>
+</head>
+
+<body style="background-image: url('index.jpg');">
+    <div id="alert"></div>
+    <div class="container mt-3" style="width: 600px;">
+        <h1 class="text-primary">Welcome To Form Validation</h1>
+        <form>
+            <div class="form-group">
+                <label class="text-primary" for="name">Enter your Name :-</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+                <div for="name" class="invalid-feedback">
+                    Please Enter a valid Name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="text-primary" for="email">Enter your E-mail :-</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your E-mail">
+                <div for="email" class="invalid-feedback">
+                    Please Enter a E-mail Adress.
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="text-primary" for="phone">Enter your PhoneNumber:-</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter your PhoneNumber">
+                <div for="email" class="invalid-feedback">
+                    Please Enter a Phone Number.
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="text-primary" for="car">Select Your Car :-</label>
+                <select class="form-control" id="car">
+                    <option>Maruti Suzuki 800</option>
+                    <option>Maruti Suzuki Alto</option>
+                    <option>Mercedes Benz</option>
+                    <option>Audi A4</option>
+                    <option>Fortuner</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="text-primary" for="message">Any Message For Us :-</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="button" id="submitbtn" class="btn btn-dark border-primary"
+                style="margin-left: 210px;">Submit</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

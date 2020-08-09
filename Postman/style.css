@@ -1,0 +1,56 @@
+* {
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header::before {
+  background: url("https://images.unsplash.com/photo-1573398643956-2b9e6ade3456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80")
+    no-repeat center center/cover;
+  content: "";
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.postman {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.postmanpara {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background: transparent;
+  border: none;
+  display: inline;
+  font-size: 40px;
+  margin-left: 25px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+}
+.col-form-label {
+  font-weight: 600;
+  font-size: 20px;
+}
+#responseJsonText{
+  color: black;
+}
+.language-javascript{
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
